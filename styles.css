@@ -79,7 +79,7 @@ a1 {
     color: white;
     text-decoration: none;
     padding: 1px;
-    font-size: 15px;
+    font-size: 11px;
 }
 
 a {
@@ -112,8 +112,8 @@ a:hover {
     border-radius: 50px 20px 50px 20px;
     box-shadow: 2px 2px 5px gray;
     max-width: 300px;
-    word-wrap: break-word;  /* Ensures long words are wrapped */
-    overflow: hidden;       /* Ensures text does not overflow the container */
+    word-wrap: break-word; 
+    overflow: hidden;       
 }
 
 .info-box {
@@ -123,8 +123,18 @@ a:hover {
     max-width: 500px;
     width: 50%;
     box-shadow: 3px 3px 5px gray;
-    word-wrap: break-word;  /* Ensures long words are wrapped */
-    overflow: hidden;       /* Ensures text does not overflow the container */
+    word-wrap: break-word;  
+    overflow: hidden;       
+}
+
+.info-box1 {
+    background: white;
+    border: 2px solid black;
+    padding: 1px;
+    max-width: 500px;
+    box-shadow: 3px 3px 5px gray;
+    word-wrap: break-word;  
+    overflow: hidden;       
 }
 
 footer {
