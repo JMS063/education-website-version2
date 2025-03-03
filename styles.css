@@ -1,10 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #8bb7f0;
+    background-color: #326dba;
     color: black;
     text-align: center;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 让页面占满整个视口 */
+    margin: 0; /* 去掉默认的页面边距 */
 }
 
 .container {
@@ -23,43 +27,32 @@ body {
     color: white;
 }
 
-.header {
-    display: flex;
-    align-items: center; 
-    gap: 20px; 
+/* 设置图片样式 */
+img {
+    max-width: 100%; /* 保证图片不会超出页面宽度 */
+    height: auto; /* 高度自动，根据宽度自适应 */
 }
-
-#logo-1, #logo-2 {
-    padding-top: 25px;
-    width: 60px;
-    height: auto;
-}
-
-.titles {
-    display: flex;
-    padding-top: 25px;
-    flex-direction: column; /* 让 h1 文字上下排列 */
-    font-size: 8px;
-    color: red;
-}
-
 
 h1 {
     font-size: 18px;
     color: red;
-    margin: 0 auto;
 }
 
 h2 {
     font-size: 15px;
     color: red;
-    margin: 0 auto;
+}
+
+h3 {
+    font-size: 15px;
+    color: black;
+    text-align: center;
 }
 
 .subtitle {
     font-size: 13px;
-    margin-bottom: 1px;
     color: black;
+    margin: 0 auto;
 }
 
 .benefits {
@@ -78,24 +71,19 @@ h2 {
 
 .benefits li strong {
     font-size: 12px;
-    min-width: 10em; /* 根据最长的 strong 内容调整 */
-    flex-shrink: 0; /* 防止 strong 收缩 */
+    min-width: 10em;
+    flex-shrink: 0;
 }
-
 
 strong {
     color: red;
 }
 
-
-
-
 nav {
     background-color: rgba(0, 61, 202, 0.792);
-    text-align: left;
     padding: 3px 10px;
+    text-align: center; /* 居中对齐 */
 }
-
 
 ul {
     list-style-type: none;
@@ -107,7 +95,6 @@ li {
     display: inline-block;
     margin-right: 2px;
 }
-
 
 a {
     color: white;
@@ -126,9 +113,8 @@ a:hover {
     gap: 5px;
     justify-content: center;
     margin: 20px;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
 }
-
 
 .wave-banner {
     background: #1E4A85;
@@ -141,8 +127,8 @@ a:hover {
     border-radius: 50px 20px 50px 20px;
     box-shadow: 2px 2px 5px gray;
     max-width: 300px;
-    word-wrap: break-word; 
-    overflow: hidden;       
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 .info-box {
@@ -155,8 +141,8 @@ a:hover {
     max-width: 500px;
     width: 50%;
     box-shadow: 3px 3px 5px gray;
-    word-wrap: break-word;  
-    overflow: hidden;       
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 .info-box1 {
@@ -165,40 +151,37 @@ a:hover {
     padding: 1px;
     max-width: 800px;
     box-shadow: 3px 3px 5px gray;
-    word-wrap: break-word;  
-    overflow: hidden;       
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 .email-link {
     font-size: 10px;
-    color: black;  
-    font-weight: bold; 
+    color: black;
+    font-weight: bold;
 }
-
-
 
 .download-btn {
     display: inline-block;
-    background-color: #FFD700;  /* 黄色背景 */
-    color: #1E4A85;  /* 蓝色文字 */
+    background-color: #FFD700;
+    color: #1E4A85;
     font-size: 16px;
     padding: 10px 20px;
-    text-decoration: none;  /* 去掉链接的下划线 */
-    border-radius: 5px;  /* 圆角 */
+    text-decoration: none;
+    border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .download-btn:hover {
-    background-color: #1E4A85;  /* 鼠标悬停时的背景颜色 */
-    color: #FFD700;  /* 鼠标悬停时的文字颜色 */
-    transform: translateY(-3px);  /* 鼠标悬停时按钮稍微上升 */
+    background-color: #1E4A85;
+    color: #FFD700;
+    transform: translateY(-3px);
 }
 
-
 .container2 {
-    display: flex;  
-    flex-direction: row; 
+    display: flex;
+    flex-direction: row;
     align-items: center;
     max-width: 900px;
     margin: auto;
@@ -209,9 +192,9 @@ a:hover {
 }
 
 .video-container {
-    flex: 2; /* 让视频区域变窄 */
+    flex: 2;
     padding: 4px;
-    margin-right: 5px; /* 缩小与按钮的间隙 */
+    margin-right: 5px;
 }
 
 .video-container video {
@@ -221,19 +204,18 @@ a:hover {
 
 .video-list {
     flex: 1;
-    padding: 5px; /* 减少内边距 */
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* 默认按钮宽度 */
 .video-list button {
     background: #f0a020;
     border: none;
     padding: 8px;
     width: 95%;
-    margin: 1px 0; /* 让按钮更紧凑 */
+    margin: 1px 0;
     cursor: pointer;
     font-size: 14px;
     text-align: left;
@@ -246,26 +228,26 @@ a:hover {
 
 /* 🔹 大屏幕（>900px）时，调整间距和按钮长度 */
 @media (min-width: 900px) {
-    .video-container {
-        flex: 1.5; /* 进一步缩小视频区域 */
-        margin-right: 0px; /* 让视频和按钮更近 */
+    .header {
+        justify-content: flex-start; /* 保证 logo 在左侧 */
     }
-    
-    .video-list {
-        padding: 0px; /* 让按钮区域的内边距更小 */
+
+    .titles {
+        text-align: center; /* 标题居中 */
+        margin-left: 20px;
     }
-h
-    .video-list button {
-        width: 40%; /* 让按钮变长 */
+
+    .titles h1, .titles h2, .titles h3 {
+        text-align: center; /* 保证标题在大屏幕时居中 */
     }
 }
 
 /* 🔹 小屏幕（<600px）时，按钮移动到视频下方 */
 @media (max-width: 600px) {
     .container2 {
-        flex-direction: column; /* 让视频和按钮垂直排列 */
+        flex-direction: column;
     }
-    
+
     .video-container {
         flex: 1;
         width: 100%;
@@ -282,8 +264,6 @@ h
         width: 60%;
     }
 }
-
-
 
 footer {
     text-align: center;
