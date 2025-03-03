@@ -197,10 +197,12 @@ a:hover {
 
 
 .container2 {
-    display: flex;  /* 让 .video-container 和 .video-list 水平排列 */
-    align-items: center;  /* 让它们垂直居中 */
+    display: flex;  
+    flex-direction: row; 
+    align-items: center;
     max-width: 900px;
     margin: auto;
+    background: white;
     border-radius: 10px;
     overflow: hidden;
     padding: 10px;
@@ -208,8 +210,7 @@ a:hover {
 
 .video-container {
     flex: 3;
-    background-color: black;
-    padding: 1px;
+    padding: 4px;
 }
 
 .video-container video {
@@ -219,27 +220,45 @@ a:hover {
 
 .video-list {
     flex: 1;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .video-list button {
     background: #f0a020;
     border: none;
-    padding: 8px; 
-    width: 95%;  
-    margin: 2px 0; 
+    padding: 8px;
+    width: 95%;
+    margin: 2px 0;
     cursor: pointer;
-    font-size: 10px;
-    text-align: center; 
-    border-radius: 3px; 
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
 }
 
 .video-list button:hover {
     background: #ddd;
 }
+
+/* 🔹 小屏幕（小于 600px）时，按钮移动到视频下方 */
+@media (max-width: 600px) {
+    .container2 {
+        flex-direction: column; /* 让视频和按钮垂直排列 */
+    }
+    
+    .video-list {
+        width: 100%; /* 让按钮区域占满屏幕 */
+        text-align: center;
+    }
+
+    .video-list button {
+        width: 90%; /* 让按钮宽度适应 */
+    }
+}
+
+
 footer {
     text-align: center;
     padding: 5px;
