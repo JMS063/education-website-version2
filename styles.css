@@ -113,7 +113,7 @@ a {
     color: white;
     text-decoration: none;
     padding: 1px;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 a:hover {
@@ -209,8 +209,9 @@ a:hover {
 }
 
 .video-container {
-    flex: 3;
+    flex: 2; /* 让视频区域变窄 */
     padding: 4px;
+    margin-right: 5px; /* 缩小与按钮的间隙 */
 }
 
 .video-container video {
@@ -220,21 +221,22 @@ a:hover {
 
 .video-list {
     flex: 1;
-    padding: 10px;
+    padding: 5px; /* 减少内边距 */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* 默认按钮宽度 */
 .video-list button {
     background: #f0a020;
     border: none;
     padding: 8px;
     width: 95%;
-    margin: 2px 0;
+    margin: 1px 0; /* 让按钮更紧凑 */
     cursor: pointer;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     border-radius: 3px;
 }
 
@@ -242,21 +244,45 @@ a:hover {
     background: #ddd;
 }
 
-/* 🔹 小屏幕（小于 600px）时，按钮移动到视频下方 */
+/* 🔹 大屏幕（>900px）时，调整间距和按钮长度 */
+@media (min-width: 900px) {
+    .video-container {
+        flex: 1.5; /* 进一步缩小视频区域 */
+        margin-right: 0px; /* 让视频和按钮更近 */
+    }
+    
+    .video-list {
+        padding: 0px; /* 让按钮区域的内边距更小 */
+    }
+h
+    .video-list button {
+        width: 40%; /* 让按钮变长 */
+    }
+}
+
+/* 🔹 小屏幕（<600px）时，按钮移动到视频下方 */
 @media (max-width: 600px) {
     .container2 {
         flex-direction: column; /* 让视频和按钮垂直排列 */
     }
     
+    .video-container {
+        flex: 1;
+        width: 100%;
+        margin-right: 0;
+    }
+
     .video-list {
-        width: 100%; /* 让按钮区域占满屏幕 */
+        width: 100%;
         text-align: center;
+        padding: 5px;
     }
 
     .video-list button {
-        width: 90%; /* 让按钮宽度适应 */
+        width: 60%;
     }
 }
+
 
 
 footer {
