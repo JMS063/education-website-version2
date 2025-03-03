@@ -17,15 +17,6 @@ body {
     padding: 20px;
 }
 
-.container1 {
-    margin: 0 auto;
-    text-align: left;
-    max-width: 800px;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 13px;
-    color: white;
-}
 
 /* 设置图片样式 */
 img {
@@ -55,13 +46,26 @@ h3 {
     margin: 0 auto;
 }
 
+.container1 {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 1px;
+
+}
 .benefits {
     max-width: 800px;
     text-align: left;
     color: black;
     padding: 20px;
     margin: 0 auto;
+    margin-top: -30px; 
 }
+
 
 .benefits li {
     display: flex;
@@ -80,9 +84,13 @@ strong {
 }
 
 nav {
-    background-color: rgba(0, 61, 202, 0.792);
+    background-color: rgba(18, 73, 202, 0.792);
+    width: 80%;
+    max-width: 800px;
     padding: 3px 10px;
     text-align: center; /* 居中对齐 */
+    margin: 0 auto; /* 水平居中 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加阴影 */
 }
 
 ul {
@@ -93,19 +101,29 @@ ul {
 
 li {
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 5px; /* 增加一些间距 */
 }
 
 a {
     color: white;
     text-decoration: none;
-    padding: 1px;
-    font-size: 11px;
+    padding: 1px 1px; /* 缩小内边距 */
+    font-size: 16px; /* 缩小字体大小 */
+    border-radius: 4px; /* 保持圆角效果 */
+    transition: background-color 0.3s, transform 0.2s; /* 添加平滑过渡效果 */
 }
 
 a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 61, 202, 1); /* 鼠标悬停时更强的颜色 */
+    transform: scale(1.05); /* 鼠标悬停时稍微放大按钮 */
 }
+
+a:active {
+    background-color: rgba(0, 61, 202, 0.8); /* 点击时的背景色 */
+    transform: scale(1); /* 防止在点击时按钮放大 */
+}
+
+
 
 .section {
     display: flex;
@@ -131,19 +149,47 @@ a:hover {
     overflow: hidden;
 }
 
-.info-box {
+.info-box { 
     font-size: 14px;
     text-align: left;
     border-radius: 8px;
     background: white;
     border: 2px solid black;
     padding: 10px;
-    max-width: 500px;
+    max-width: 300px;
     width: 50%;
     box-shadow: 3px 3px 5px gray;
     word-wrap: break-word;
     overflow: hidden;
+    display: flex;
+    flex-direction: column; /* 使 h3 和 h4 垂直排列 */
+    align-items: center; /* 水平居中 */
 }
+
+.info-box h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* 使 h3 文本水平居中 */
+    margin-bottom: 15px; /* 增加 h3 和 h4 之间的间距 */
+}
+
+.info-box ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 确保 h4 项目垂直对齐 */
+    gap: 10px;
+}
+
+.info-box h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* 使 h4 文本水平居中 */
+}
+
+
 
 .info-box1 {
     background: white;
