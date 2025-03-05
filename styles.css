@@ -107,7 +107,7 @@ h3 {
 }
 
 strong {
-    color: red;
+    color: rgb(255, 230, 0);
 }
 
 nav {
@@ -179,7 +179,7 @@ a:active {
 }
 
 .highlight {
-    color: red;
+    color: rgb(255, 230, 0);
     font-weight: bold;
 }
 
@@ -261,7 +261,7 @@ a:active {
     }
     
     .highlight {
-        color: red;
+        color: rgb(255, 230, 0);
         font-weight: bold;
     }
     
