@@ -64,7 +64,7 @@ h3 {
         max-width: 800px;
         padding: 20px;
         border-radius: 8px;
-        font-size: 13px;
+        font-size: 15px;
         color: white;
         margin-bottom: 1px;
     }
@@ -98,11 +98,11 @@ h3 {
 @media (max-width: 600px) {
     .benefits li strong {
         padding-left: 2em; 
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .benefits li {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
