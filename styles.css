@@ -22,7 +22,32 @@ body {
 img {
     max-width: 100%; 
     height: auto; 
+    margin-top: 40px;
+    position: relative;
+    left: -90px; 
 }
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 40px;
+    position: relative;
+    left: -90px;
+    transition: left 0.5s ease-out;
+}
+
+@media (max-width: 990px) {
+    img {
+        left: -45px;
+    }
+}
+
+@media (max-width: 800px) {
+    img {
+        left: 0px;
+    }
+}
+
 
 h1 {
     font-size: 18px;
@@ -55,7 +80,7 @@ h3 {
     font-size: 18px;
     color: white;
     margin-bottom: 1px;
-    border-radius: 5px; /* 圆角边框，使其更美观 */
+    border-radius: 5px; 
 }
 
 
@@ -102,6 +127,7 @@ nav {
     text-align: center;
     margin: 0 auto; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
 }
 
 ul {
@@ -139,16 +165,16 @@ a:active {
 .banner {
     display: flex;
     width: 80%;
-    max-width: 760px;
+    max-width: 800px;
     margin: 0 auto; 
     padding: 20px;
     color: white;
     align-items: center;
-    border: 2px solid #000; 
     border-radius: 5px; 
     background-color: #f9f9f9; 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
-    margin-top: 5px;
+    margin-top: 30px;
+    box-sizing: border-box; 
+    
 }
 
 
@@ -216,6 +242,10 @@ a:active {
     color: black;
 }
 
+.h2-indent-1, .h2-indent-2 {
+    font-family: cursive;
+    font-style: italic;
+}
 
 .h2-indent-2 {
     margin-top: -20px;
@@ -226,15 +256,14 @@ a:active {
 
 .info-box1 {
     background: white;
-    border: 2px solid black;
     padding: 1px;
     max-width: 800px;
     margin: 0 auto; 
     word-wrap: break-word;
     overflow: hidden;
     border-radius: 5px; 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    margin-top: 1px;
+    margin-top: 30px;
+
 }
 
 .email-link {
@@ -271,7 +300,7 @@ a:active {
     border-radius: 5px;
     overflow: hidden;
     padding: 10px;
-    margin-top: 1px;
+    margin-top: 30px;
     
 }
 
@@ -334,6 +363,7 @@ footer {
     color: white;
     margin-top: 1px;
     border-radius: 5px; 
+    margin-top: 30px;
 }
 
 .footer-image {
@@ -353,6 +383,7 @@ footer {
 @media (max-width: 600px) {
 
 
+
     nav {
         background-color: rgba(18, 73, 202, 0.792);
         width: 80%;
@@ -361,6 +392,7 @@ footer {
         text-align: center;
         margin: 0 auto; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
     }
     
     ul {
@@ -486,8 +518,13 @@ footer {
     margin-left: 5em;  
 }
 
+.h2-indent-1, .h2-indent-2 {
+    font-family: cursive;
+    font-style: italic;
+}
+
 .h2-indent-2 {
-    margin-top: -20px;
+    margin-top: -10px;
     text-indent: 4em;
 }
 
