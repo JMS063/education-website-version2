@@ -17,27 +17,10 @@ body {
     margin: 0 auto;
 }
 
-
-img:not(.footer-image) {
+img {
     max-width: 100%; 
     height: auto; 
     margin-top: 40px;
-    position: relative;
-    left: -90px;
-    transition: left 0.5s ease-out;
-}
-
-
-@media (max-width: 990px) {
-    img:not(.footer-image) {
-        left: -45px;
-    }
-}
-
-@media (max-width: 800px) {
-    img:not(.footer-image) {
-        left: 0px;
-    }
 }
 
 
@@ -96,7 +79,7 @@ h3 {
 
 .benefits li {
     display: flex;
-    font-size: 18px;
+    font-size: 15px;
     font-style: italic;
 }
 
