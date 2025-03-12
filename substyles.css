@@ -368,4 +368,47 @@ th:nth-child(3) {
       background-color: rgba(0, 61, 202, 0.8); 
       transform: scale(1);
   }
+
+  .table-major table {
+    width: 100%; 
+  }
+
+  .table-major th, 
+  .table-major td {
+    font-size: 10px; 
+    padding: 5px; 
+  }
+
+  td[rowspan], th:first-child {
+    font-size: 15px; 
+  }
+
+  .content {
+    width: 99%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .content table {
+    font-size: 12px; 
+  }
+
+  .content th,
+  .content td {
+    padding: 5px; 
+    font-size: 10px; 
+  }
+
+  .content td:nth-child(2) {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .content th {
+    font-size: 13px; 
+  }
 }
