@@ -21,6 +21,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+td {
+  padding-left: 10px; /* 增加左侧缩进 */
+  padding-right: 10px; /* 可选，增加右侧缩进 */
+  text-align: left; /* 确保文本靠左 */
+}
+
 p {
   text-indent: 2em;
   margin-bottom: 1em;
@@ -400,8 +406,11 @@ th:nth-child(3) {
   .content th,
   .content td {
     padding: 5px; 
-    font-size: 10px; 
+    font-size: 10px;  
+    text-align: center;
+    vertical-align: middle; 
   }
+
 
   .content td:nth-child(2) {
     text-align: center;
