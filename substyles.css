@@ -431,4 +431,9 @@ th:nth-child(3) {
     margin: 0 auto;
     text-align: center;
   }
+
+  .custom-url {
+    font-size: 12px; /* 调整字体大小 */
+    color: white; /* 确保颜色保持不变 */
+}
 }
