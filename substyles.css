@@ -252,93 +252,89 @@ td:first-child {
 
 /* ---------------------CSS code for picture---------------------*/
 * {
-    box-sizing: border-box;
-  }
-  
+  box-sizing: border-box;
+}
 
-  .container {
-    position: relative;
-  }
+.container {
+  position: relative;
+}
+
+.photogallery {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.number {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 20%; /* 5 images per row */
+  padding: 5px; /* Reduce padding between images */
+}
+
+.slides {
+  opacity: 0.6;
+  width: 90%; /* Resize images to make them smaller */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.active,
+.slides:hover {
+  opacity: 1;
+}
 
 
-  .photogallery {
-    display: none;
-  }
-  
-
-  .cursor {
-    cursor: pointer;
-  }
-  
-
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
- 
-  .prev {
-        left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-
-
-
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-
-  .number {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .caption-container {
-    text-align: center;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  .slides {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .slides:hover {
-    opacity: 1;
-  }
 
 /* ---------------------CSS code for smaller screen---------------------*/
 td[rowspan], th:first-child {
