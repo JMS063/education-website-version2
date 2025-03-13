@@ -22,9 +22,9 @@ body {
 }
 
 td {
-  padding-left: 10px; /* 增加左侧缩进 */
-  padding-right: 10px; /* 可选，增加右侧缩进 */
-  text-align: left; /* 确保文本靠左 */
+  padding-left: 10px; 
+  padding-right: 10px; 
+  text-align: left; 
 }
 
 p {
@@ -78,12 +78,12 @@ h3 {
 }
 
 .section a {
-  color: blue; /* 或者其他颜色 */
-  text-decoration: none; /* 去掉下划线 */
+  color: blue;
+  text-decoration: none; 
 }
 
 .section a:hover {
-  color: blue; /* 悬停时的颜色 */
+  color: blue; 
 }
 
 .section ul {
@@ -177,14 +177,75 @@ a:active {
   margin-top: 20px;
   max-width: 70%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
+
+.contact-header {
+  width: 100%;
+}
+
+.contact-header h2 {
+  background-color: #c10d23;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  width: 100%; 
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
 .contact-info {
   flex: 1;
 }
-.contact-info p {
-  margin: 5px 0;
+
+.contact-image img {
+  width: 200px; 
+  height: auto;
+  border-radius: 5px;
 }
+
+
+
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background: #014270;
+  color: white;
+  margin-top: 1px;
+  border-radius: 5px; 
+  margin-top: 30px;
+}
+
+.footer-left p{
+    text-indent: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.registration-text {
+  text-indent: 2em;
+  text-align: justify;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+td:first-child {
+  color: black; 
+  font-weight: bold; 
+  text-align: left; 
+  padding: 8px;
+}
+
+
+
 
 /* ---------------------CSS code for picture---------------------*/
 * {
@@ -293,14 +354,14 @@ th:nth-child(3) {
 }
 
 
-/* 专业方向表格样式 */
+
 .table-major table {
   width: 80%;
   border-collapse: collapse;
   margin: 0 auto;
 }
 
-/* 专业方向表头 */
+
 .table-major th {
   background-color: #a30000;
   color: white;
@@ -309,7 +370,7 @@ th:nth-child(3) {
   padding: 10px;
 }
 
-/* 专业方向第一列背景设为红色 */
+
 .table-major td:first-child {
   background-color: #c10d23;
   color: white;
@@ -318,7 +379,7 @@ th:nth-child(3) {
   padding: 8px;
 }
 
-/* 专业方向表格第二列背景保持白色 */
+
 .table-major td:nth-child(2) {
   background-color: #ffffff;
   color: black;
@@ -326,7 +387,7 @@ th:nth-child(3) {
   padding: 8px;
 }
 
-/* 设定专业方向表格边框 */
+
 .table-major th, .table-major td {
   border: 1px solid #ddd;
 }
@@ -453,5 +514,25 @@ th:nth-child(3) {
 
 .advantage-content {
   width: 100%; 
+}
+
+.registration-text {
+  text-align: left; 
+  line-height: 1.6;
+}
+
+.contact-content {
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+}
+
+.contact-image {
+  margin-top: 15px; 
+}
+
+.contact-image img {
+  width: 80%; 
+  max-width: 300px; 
 }
 }
