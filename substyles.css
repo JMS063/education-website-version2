@@ -245,6 +245,9 @@ td:first-child {
 }
 
 
+.indent-7 {
+  text-indent: 7em;
+}
 
 
 /* ---------------------CSS code for picture---------------------*/
@@ -468,16 +471,6 @@ th:nth-child(3) {
   .content td {
     padding: 5px; 
     font-size: 10px;  
-    text-align: center;
-    vertical-align: middle; 
-  }
-
-
-
-  .content th,
-  .content td {
-    padding: 5px; 
-    font-size: 10px;  
     text-align: left;
     vertical-align: middle; 
   }
@@ -535,4 +528,9 @@ th:nth-child(3) {
   width: 80%; 
   max-width: 300px; 
 }
+
+.indent-7 {
+  text-indent: 2em;
+}
+
 }
