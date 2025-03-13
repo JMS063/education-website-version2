@@ -1,11 +1,12 @@
 body {
     font-family: "Microsoft YaHei", sans-serif;
-    background: linear-gradient( #3573c5 1%, white 40%);
+    background: linear-gradient(to bottom, #3573c5 0%, white 50%, #3573c5 100%);
     color: black;
     text-align: center;
     margin: 0;
     padding: 0;
 }
+
 
 
 .container {
