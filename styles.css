@@ -213,7 +213,7 @@ a:active {
 
 .sub-text {
     margin-top: -5px; 
-    margin-left: 6em;  
+    margin-left: 3em;  
     font-size: 16px;
     color: black;
 }
@@ -345,18 +345,15 @@ footer {
 .footer-image {
     max-width: 100%;
     width: 120px;
-    margin-top: 10px;
     border-radius: 10px;
     max-width: 100%; 
     height: auto; 
-    margin-top: 40px;
+    margin-top: 5px;
 }
 
 .footer-right {
     margin: 10px;
 }
-
-
 
 /* ---------------------CSS code for smaller screen---------------------*/
 @media (max-width: 600px) {
