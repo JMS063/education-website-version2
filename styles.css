@@ -243,7 +243,7 @@ a:active {
 }
 
 .email-link {
-    font-size: 10px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
 }
@@ -354,6 +354,8 @@ footer {
 .footer-right {
     margin: 10px;
 }
+
+
 
 /* ---------------------CSS code for smaller screen---------------------*/
 @media (max-width: 600px) {
