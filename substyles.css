@@ -311,29 +311,26 @@ td:first-child {
   color: white;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px; /* 可以调节间距 */
 }
 
 .column {
-  float: left;
-  width: 20%; /* 5 images per row */
-  padding: 5px; /* Reduce padding between images */
+  width: calc(16.66% - 10px); /* 6个图片，占满100%的宽度，减去间距 */
+  box-sizing: border-box;
 }
 
 .slides {
   opacity: 0.6;
-  width: 90%; /* Resize images to make them smaller */
-  height: auto; /* Maintain aspect ratio */
 }
 
 .active,
 .slides:hover {
   opacity: 1;
 }
-
 
 
 /* ---------------------CSS code for smaller screen---------------------*/
