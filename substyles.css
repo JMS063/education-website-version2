@@ -144,15 +144,24 @@ a:active {
   gap: 20px;
   margin-top: 20px;
 }
+
 .advantage {
-  background: #c72c2c;
+  background: #e76666;
   color: white;
   padding: 15px;
   width: 200px;
+  height: 180px; 
   text-align: center;
   font-weight: bold;
   border-radius: 5px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-size: 1.5em; 
+  line-height: 1.2; 
 }
+
+
 .advantage-content {
   flex: 1;
   background: #f0f0f0;
@@ -494,7 +503,10 @@ th:nth-child(3) {
 }
 
 .advantage {
-  width: 100%; 
+  width: 400px;  /* 让框变窄 */
+  height: 80px;  /* 让框变矮 */
+  font-size: 1.2em;  /* 让字体变小 */
+  padding: 10px; /* 适当减少内边距 */
   text-align: center; 
 }
 
