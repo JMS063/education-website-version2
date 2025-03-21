@@ -418,7 +418,9 @@ footer {
 
 .benefits li {
     font-size: 14px;
+        flex-wrap: wrap;
 }
+
 
 .banner {
     display: block;  
