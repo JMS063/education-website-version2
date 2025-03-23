@@ -70,6 +70,7 @@ h3 {
 .benefits p {
     color: black !important; 
     -webkit-text-fill-color: black !important; 
+    font-variant-numeric: tabular-nums;
 }
 
 
